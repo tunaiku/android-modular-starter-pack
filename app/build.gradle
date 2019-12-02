@@ -1,0 +1,12 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from: '../common_gradle.gradle'
+
+android {
+
+}
+
+dependencies {
+    implementation project(':common')
+}

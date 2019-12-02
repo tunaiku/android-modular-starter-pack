@@ -1,0 +1,11 @@
+apply plugin: 'com.android.library'
+apply from: '../common_gradle.gradle'
+
+android {
+
+}
+
+dependencies {
+    api project(':navigation')
+    api project(':features:movies')
+}

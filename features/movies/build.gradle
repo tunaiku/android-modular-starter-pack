@@ -1,0 +1,10 @@
+apply plugin: 'kotlin-kapt'
+apply from: '../../feature_gradle.gradle'
+
+android {
+
+}
+
+dependencies {
+
+}

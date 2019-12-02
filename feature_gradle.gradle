@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+apply from: '../../common_gradle.gradle'
+
+android {
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+
+}
