@@ -1,5 +1,6 @@
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion Versions.compiledSdk
     buildToolsVersion "29.0.2"
@@ -27,6 +28,14 @@ dependencies {
     implementation Libraries.kotlin
     implementation Libraries.appCompat
     implementation Libraries.coreKtx
+    implementation Libraries.constraintLayout
+
+    implementation Libraries.dagger
+    implementation Libraries.daggerAndroid
+    implementation Libraries.daggerAndroidSupport
+    kapt Libraries.daggerAnnotation
+    kapt Libraries.daggerProcessor
+
     testImplementation Libraries.jUnit
     androidTestImplementation Libraries.jUnitTest
     androidTestImplementation Libraries.espressoCore
