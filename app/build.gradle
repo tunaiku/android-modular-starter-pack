@@ -4,7 +4,10 @@ apply plugin: 'kotlin-android-extensions'
 apply from: '../common_gradle.gradle'
 
 android {
-
+    defaultConfig{
+        applicationId ApplicationId.appId
+        multiDexEnabled true
+    }
 }
 
 dependencies {
