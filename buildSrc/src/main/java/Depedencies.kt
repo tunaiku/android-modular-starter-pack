@@ -23,6 +23,10 @@ object Versions {
     const val coreKtxVersion = "1.1.0"
     const val appCompatVersion = "1.1.0"
     const val kotlinVersion = "1.3.61"
+    const val constraintLayout = "1.1.3"
+
+//    DI
+    const val daggerVersion = "2.24"
 
 //    Testing Library
     const val mockkVersion = "1.9.3"
@@ -65,4 +69,18 @@ object Libraries {
     const val retrofitRxAdapter ="com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
     const val httpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
     const val rx = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
+
+//    UI
+    const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+    const val glideCompiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
+    const val material = "com.google.android.material:material:${Versions.material}"
+    const val anko = "org.jetbrains.anko:anko:${Versions.anko}"
+    const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+
+//    DI
+    const val dagger = "com.google.dagger:dagger:${Versions.daggerVersion}"
+    const val daggerAndroid = "com.google.dagger:dagger-android:${Versions.daggerVersion}"
+    const val daggerAndroidSupport = "com.google.dagger:dagger-android-support:${Versions.daggerVersion}"
+    const val daggerAnnotation = "com.google.dagger:dagger-compiler:${Versions.daggerVersion}"
+    const val daggerProcessor = "com.google.dagger:dagger-android-processor:${Versions.daggerVersion}"
 }
