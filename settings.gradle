@@ -1,2 +1,2 @@
-include ':app', ':navigation', ':common', 'data:repository', 'features:movies'
+include ':app', ':navigation', ':common', ':tvshow', 'data:repository', 'features:movies'
 rootProject.name='Modular-Architecture'
