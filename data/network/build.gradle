@@ -5,9 +5,9 @@ android {
 }
 
 dependencies {
-
-    implementation Libraries.retrofit
-    implementation Libraries.moshi
-    implementation Libraries.retrofitRxAdapter
-    implementation Libraries.httpLoggingInterceptor
+    implementation Libraries.gson
+    api Libraries.retrofit
+    api Libraries.moshi
+    api Libraries.retrofitRxAdapter
+    api Libraries.httpLoggingInterceptor
 }
