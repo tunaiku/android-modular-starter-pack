@@ -36,6 +36,11 @@ dependencies {
     kapt Libraries.daggerAnnotation
     kapt Libraries.daggerProcessor
 
+    implementation Libraries.retrofit
+    implementation Libraries.moshi
+    implementation Libraries.httpLoggingInterceptor
+    implementation Libraries.retrofitRxAdapter
+
     testImplementation Libraries.jUnit
     androidTestImplementation Libraries.jUnitTest
     androidTestImplementation Libraries.espressoCore
