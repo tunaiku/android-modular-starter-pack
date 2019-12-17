@@ -3,8 +3,6 @@ package com.godohdev.networkmodule.di
 import android.os.SystemClock
 import android.util.Log
 import com.godohdev.networkmodule.BuildConfig
-import com.godohdev.networkmodule.api.MoviesService
-import com.godohdev.networkmodule.api.TvShowService
 import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
@@ -61,17 +59,5 @@ class NetworkModule {
             .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
-    }
-
-    @Provides
-    @Singleton
-    fun moviesService(retrofit: Retrofit): MoviesService{
-        return retrofit.create(MoviesService::class.java)
-    }
-
-    @Provides
-    @Singleton
-    fun tvShowService(retrofit: Retrofit): TvShowService{
-        return retrofit.create(TvShowService::class.java)
     }
 }
