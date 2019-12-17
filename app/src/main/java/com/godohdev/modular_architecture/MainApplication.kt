@@ -20,8 +20,15 @@ import javax.inject.Inject
 
 class MainApplication : Application(), HasAndroidInjector{
 
-    lateinit var instance: MainApplication
-    lateinit var appComponent: AppComponent
+    private val daggerComponent by lazy {
+        DaggerAppComponent.builder()
+            .application(this)
+            .build()
+    }
+
+    companion object{
+        lateinit var instance: MainApplication
+    }
 
     @Inject
     lateinit var mActivityDispatchingAndroidInjector: DispatchingAndroidInjector<Any>
@@ -39,13 +46,6 @@ class MainApplication : Application(), HasAndroidInjector{
         super.onCreate()
 
         instance = this
-        appComponent = createComponent()
-        appComponent.inject(this)
-    }
-
-    private fun createComponent(): AppComponent{
-        return DaggerAppComponent.builder()
-            .application(this)
-            .build()
+        daggerComponent.inject(this)
     }
 }
