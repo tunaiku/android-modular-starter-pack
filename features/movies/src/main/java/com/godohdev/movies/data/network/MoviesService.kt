@@ -1,4 +1,4 @@
-package com.godohdev.networkmodule.api
+package com.godohdev.movies.data.network
 
 
 /**
@@ -8,6 +8,6 @@ package com.godohdev.networkmodule.api
  *
  **/
 
-interface TvShowService {
+interface MoviesService {
 
 }
