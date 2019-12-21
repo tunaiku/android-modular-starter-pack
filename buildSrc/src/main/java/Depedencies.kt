@@ -38,6 +38,7 @@ object Versions {
     const val gson = "2.8.5"
     const val okHttp = "3.12.1"
     const val retrofit = "2.6.1"
+    const val moshiVersion = "2.4.0"
 
 //    UI
     const val anko = "0.10.8"
@@ -69,6 +70,7 @@ object Libraries {
     const val retrofitRxAdapter ="com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
     const val httpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
     const val rx = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
+    const val moshi = "com.squareup.retrofit2:converter-moshi:${Versions.moshiVersion}"
 
 //    UI
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"

@@ -6,6 +6,7 @@ android {
 }
 
 dependencies {
+    api project(':data:network')
     api project(':navigation')
     api project(':features:movies')
 }

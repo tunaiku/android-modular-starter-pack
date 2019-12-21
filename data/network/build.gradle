@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+apply from: '../../common_gradle.gradle'
+android {
+
+}
+
+dependencies {
+    implementation Libraries.gson
+    api Libraries.retrofit
+    api Libraries.moshi
+    api Libraries.retrofitRxAdapter
+    api Libraries.httpLoggingInterceptor
+}
